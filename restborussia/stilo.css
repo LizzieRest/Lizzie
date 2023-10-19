@@ -1,0 +1,16 @@
+@font-face {
+    font-family:Alegreya ;
+    src: url("https://fonts.googleapis.com/css?family=Alegreya");
+}
+
+body {font-family: Alegreya; font-style: italic;}
+h1{font-weight: bold;}
+
+.greatw{text-decoration: none; font-weight: bold;}
+
+/* animación para nosotros */
+.animation{ margin-left:12vw; margin-right: 12vw;}
+
+.f{position: relative; animation: myfirst 2s 2; animation-direction: alternate;}
+
+@keyframes myfirst { 0%   { left: 0px; top: 0px;} 50%  {left: 200px; top: 0px;} 100% {left: 0px; top: 0px;}}

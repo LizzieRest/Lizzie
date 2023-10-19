@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- boostrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- ---------- -->
+  <!-- jQuery debe venir primero, luego Popper y luego nuestros complementos de JavaScript. Scrips separados -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+ <!-- ----------- -->
+ <link rel="stylesheet" href="stilo.css">
+ <link rel="shortcut icon" href="/copavino.ico" type="image/x-icon">
+
+    <title>Reservas</title>
+</head>
+<body>
+  <header> 
+    <div class="container-fluid p-5 my-3 bg-dark text-white text-center">
+      <h2> Reservas </h2>
+      <h4> "Todo lo que hacemos en este restaurante, es en excelencia"</h4>
+      <h6> Agradecemos responsabilidad y compromiso al momento de tomar una reserva. </h6>
+    </div>
+  </header>
+
+<main style="margin: 6%;">
+  <h2>Reservar mesa</h2>
+  <p> <b>Primer paso:</b> rerserve la mesa que más le gusta del sector principal del restaurante.
+    Si desea un sector vip con vista al mar, comuníquese directamente por vía telefónica <a href="http://wa.me/2235741777" style="color: grey;"> Borussian wpp</a>.
+  Luego que aparezca el cartel de "reservada", diríjase al formulario a continuación para dejar sentados sus datos y ver los días y horarios disponibles.</p> <br><br>
+  
+  <div style="border: solid 3px;"></div>
+  <br><br><br>
+
+  <h6><b> Vista del salón principal, desde una perspectiva superior aérea.</b></h6> <br>
+  <img src="salonppal.jpg" alt="vista desde arriba"> <br><br><br>
+
+<p>Introduzca el número de mesa y haga click en aceptar:</p>
+
+<!-- Api java -->
+
+<input id="id1" type="number" min="1" max="17" required>
+<button onclick="myFunction()">OK</button>
+
+<p>Coloque en el campo vacío el número de mesa que desea reservar. Luego, se le ofrecerán fechas y horas disponibles lo más próximas posibles.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+const inpObj = document.getElementById("id1");
+if (!inpObj.checkValidity()) {
+  document.getElementById("demo").innerHTML = inpObj.validationMessage;
+} else {
+  document.getElementById("demo").innerHTML = "Reservada ";
+} 
+} 
+</script>
+<br><br>
+<form action="../../form-result.php">
+<fieldset> <legend>Fechas y horarios disponibles</legend>
+  <p><b>Segundo paso</b></p>
+  Seleccione fecha: <input type="date">
+  Seleccione hora: <input type="time">
+  <button type="submit"> Ver disponibilidad </button>
+</fieldset>
+</form>
+<br> <br>
+    <div class="container mt-3">
+        <h3>Rerservar</h3>
+        <p><b>Tercer paso:</b>Por favor, complete todos los datos</p>
+          
+        <!-- form java con validación -->
+        <form action="/action_page.php" class="was-validated">
+          <div class="mb-3 mt-3">
+            <label for="uname" class="form-label">Nombre y Apellido</label>
+            <input type="text" class="form-control" id="uname" placeholder="Introduzca nombre" name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Por favor, rellene este campo.</div>
+          </div>
+          <div class="mb-3">
+            <label for="pwd" class="form-label">Número de celular</label>
+            <input type="tel" minlength="11" maxlength="11" class="form-control" id="pwd" placeholder="Introduzca números sin 0, 15 ni espacios" name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Por favor, rellene este campo.</div>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+            <label class="form-check-label" for="myCheck">Acepto que al reservar mesa, debo procesar un pago en concepto de seña.</label>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Marque esta casilla de verificación para continuar.</div>
+          </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+       
+      </div>
+    </main>  
+
+    <div class="container-fluid p-5 my-3 bg-dark text-white "> 
+        <div class="row">
+            <div class="col-sm-6">
+                <h3> Nuestra ubicación</h3> <br>
+                <img src="hotel_boutique_casa_de_vides_localidad.jpg" alt="vista desde hotel" width="70%" height="70%">
+               <br> <br>
+                <p> Contáctanos por email : <a href="mailto: elirestelli@gmail.com" class="greatw"> Borussian mail</a></p> <br> <br>
+                <!-- <p> Contáctanos por whatsapp: <a href="https://api.whatsapp.com/send?phone=346….302&text=Hola%20,te%20asesoramos%20por
+                    %20whatsapp%20gestiona%20tu%20compra%20por%20este%20canal." class="greatw"> Borussian wpp</a> </p> -->
+            </div>
+   <div class="col-sm-6"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.676616871435!2d-57.53600862438209!3d-38.008002771927686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dd0dd7b5f0a7%3A0x544a3fcce731e376!2sTorre%C3%B3n%20del%20Monje!5e0!3m2!1ses!2sar!4v1697486670408!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+</body>
+</html>

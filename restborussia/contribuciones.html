@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- boostrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <!-- ---------- -->
+     <!-- jQuery debe venir primero, luego Popper y luego nuestros complementos de JavaScript. Scrips separados -->
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <!-- ----------- -->
+
+    <!-- Línea 16 para íconos -->
+    <script src="https://kit.fontawesome.com/288ab0ca08.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="stilo.css">
+    <link rel="shortcut icon" href="/copavino.ico" type="image/x-icon">
+    <title>Borussia</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid p-5 my-3 bg-dark text-white text-center "> 
+            <h1> !Tu opinión nos interesa!</h1>
+        </div>
+    </header>
+    <main>
+        <img src="frentmarrest.jpg" class="rounded" alt="Vista frente al mar" width="100%">
+        <div class="container mt-3">
+            <h2>Contribuciones</h2>
+            <p>Haga clic dentro del área de texto para comentar su experiencia. Cada opinión contribuye a la calificación general del establecimiento.</p>
+            <form action="/action_page.php">
+              <div class="form-floating mb-3 mt-3">
+                <textarea class="form-control" id="comment" name="text" placeholder="Comentá aquí"></textarea>
+                <label for="comment">Comentarios</label>
+              </div>
+              <div class="form-check mb-3">
+              <button type="submit" class="btn btn-dark">Enviar</button>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Marque esta casilla de verificación para continuar.</div>
+            </div>
+            </form>
+          </div>
+          
+    </main>
+</body>
+<footer>
+  <div class="conteiner-fluid p-5 my-3 bg-dark text-white">
+<div class="row">
+  <div class="col-sm-4">
+      <h6> Encuéntranos en redes sociales</h6>
+      <ul>
+<li> <i class="fa-brands fa-instagram"></i> Instagram </li>
+<li> <i class="fa-brands fa-facebook"></i> Facebook </li>
+<li> <i class="fa-brands fa-github"></i> Github, repositorio </li>
+<li> <i class="fa-brands fa-whatsapp"> </i> Whatsapp </li>
+<li> <i class="fa-regular fa-envelope"> </i> Email </li>
+</ul>
+</div>
+
+<div class="col-sm-4" >
+  <h6> Accesos </h6>
+  <ul>
+  <li><i class="fa-solid fa-wifi"> </i> Wifi</li>
+<li>  <i class="fa-solid fa-car-side">  </i> Área de Estacionamiento </li>
+ <li> <i class="fa-brands fa-reddit-alien">  </i> Zona para niños </li>
+ <li> <i class="fa-solid fa-briefcase-medical"> </i> Servicio médico en caso de emergencia </li>
+</ul>
+</div>
+<div class="col-sm-4">
+  <h6> Horarios de atención</h6>
+  <ul>
+      <li> Domingos y sábados de 10 a 23 hs</li>
+      <li> Feriados de 12 a 23 hs</li>
+      <li>Lunes a viernes de 11 a 22 hs</li>
+  </ul>
+</div>
+  </div>
+</footer>
+</html>
