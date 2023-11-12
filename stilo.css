@@ -1,0 +1,50 @@
+@font-face {
+    font-family:Alegreya ;
+    src: url("https://fonts.googleapis.com/css?family=Alegreya");
+}
+@media (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas */
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Estilos para pantallas medianas */
+}
+@media (min-width: 992px) {
+  /* Estilos para pantallas grandes */
+}
+
+
+body {font-family: Alegreya; font-style: italic;}
+h1{font-weight: bold;}
+
+.greatw{text-decoration: none; font-weight: bold;}
+
+/* animación para nosotros */
+.animation{ margin-left:12vw; margin-right: 12vw;}
+
+.f{position: relative; animation: myfirst 2s 2; animation-direction: alternate;}
+
+@keyframes myfirst { 0%   { left: 0px; top: 0px;} 50%  {left: 200px; top: 0px;} 100% {left: 0px; top: 0px;}}
+
+
+/*Estilo para la carta*/
+.carta{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5vw;
+}
+
+.plato{
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.plato img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
